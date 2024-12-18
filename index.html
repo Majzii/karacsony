@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karácsonyi ajándékok</title>
+    <link rel="stylesheet" href="/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Válassz ajándékot</h1>
+    <div class="container mt-5">
+        <div class="row">
+        
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4" id="card-1">
+            <div class="card">
+              <img src="/kepek/ajandek1.jfif" class="card-img-top" alt="Kép 1">
+              <div class="card-body">
+                <h5 class="card-title">Pénz</h5>
+                <p class="card-text">Végtelen pénz.</p>
+                <button class="btn btn-primary" onclick="szavazas(1)">Szavazás</button>
+                <div id="counter-1" class="card-counter">0</div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4" id="card-2">
+            <div class="card">
+              <img src="/kepek/ajandek2.jfif" class="card-img-top" alt="Kép 2">
+              <div class="card-body">
+                <h5 class="card-title">Autó</h5>
+                <p class="card-text">Bármilyen autó amit szeretnél (csak 1db).</p>
+                <button class="btn btn-primary" onclick="szavazas(2)">Szavazás</button>
+                <div id="counter-2" class="card-counter">0</div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4" id="card-3">
+            <div class="card">
+              <img src="/kepek/ajandek3.jfif" class="card-img-top" alt="Kép 3">
+              <div class="card-body">
+                <h5 class="card-title">Lego</h5>
+                <p class="card-text">Bármilyen lego amit szeretnél (csak 1db).</p>
+                <button class="btn btn-primary" onclick="szavazas(3)">Szavazás</button>
+                <div id="counter-3" class="card-counter">0</div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4" id="card-4">
+            <div class="card">
+              <img src="/kepek/ajandek4.png" class="card-img-top" alt="Kép 4">
+              <div class="card-body">
+                <h5 class="card-title">Nyaralás</h5>
+                <p class="card-text">Egy nyaralás oda ahova a legszívesebben szeretnéd.</p>
+                <button class="btn btn-primary" onclick="szavazas(4)">Szavazás</button>
+                <div id="counter-4" class="card-counter">0</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4" id="card-5">
+            <div class="card">
+              <img src="/kepek/ajandek5.png" class="card-img-top" alt="Kép 5">
+              <div class="card-body">
+                <h5 class="card-title">Labda</h5>
+                <p class="card-text">Egy álltalad választott labda.</p>
+                <button class="btn btn-primary" onclick="szavazas(5)">Szavazás</button>
+                <div id="counter-5" class="card-counter">0</div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4" id="card-6">
+            <div class="card">
+              <img src="/kepek/ajandek6.webp" class="card-img-top" alt="Kép 6">
+              <div class="card-body">
+                <h5 class="card-title">Parfüm</h5>
+                <p class="card-text">Egy álltalad választott parfüm.</p>
+                <button class="btn btn-primary" onclick="szavazas(6)">Szavazás</button>
+                <div id="counter-6" class="card-counter">0</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4" id="card-7">
+            <div class="card">
+              <img src="/kepek/ajandek7.jpeg" class="card-img-top" alt="Kép 1">
+              <div class="card-body">
+                <h5 class="card-title">Kisállat</h5>
+                <p class="card-text">Az a kiskedvenc amire egesz életedben vágytál.</p>
+                <button class="btn btn-primary" onclick="szavazas(7)">Szavazás</button>
+                <div id="counter-7" class="card-counter">0</div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4" id="card-8">
+            <div class="card">
+              <img src="/kepek/ajandek8.jfif" class="card-img-top" alt="Kép 2">
+              <div class="card-body">
+                <h5 class="card-title">Korcsolya</h5>
+                <p class="card-text">Egy pár korcsolya.</p>
+                <button class="btn btn-primary" onclick="szavazas(8)">Szavazás</button>
+                <div id="counter-8" class="card-counter">0</div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4" id="card-9">
+            <div class="card">
+              <img src="/kepek/ajandek9.jpg" class="card-img-top" alt="Kép 3">
+              <div class="card-body">
+                <h5 class="card-title">Ronda karácsonyi pulóver</h5>
+                <p class="card-text">A világ összes ronda pulcsija a tiéd lehet.</p>
+                <button class="btn btn-primary" onclick="szavazas(9)">Szavazás</button>
+                <div id="counter-9" class="card-counter">0</div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4" id="card-10">
+            <div class="card">
+              <img src="/kepek/ajandek10.webp" class="card-img-top" alt="Kép 4">
+              <div class="card-body">
+                <h5 class="card-title">Számítógép</h5>
+                <p class="card-text">Az álltalad összeállított álom géped.</p>
+                <button class="btn btn-primary" onclick="szavazas(10)">Szavazás</button>
+                <div id="counter-10" class="card-counter">0</div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4" id="card-11">
+            <div class="card">
+              <img src="/kepek/ajandek11.jfif" class="card-img-top" alt="Kép 5">
+              <div class="card-body">
+                <h5 class="card-title">Ékszer</h5>
+                <p class="card-text">Egy a te ízlésednek megfelelő ékszer.</p>
+                <button class="btn btn-primary" onclick="szavazas(11)">Szavazás</button>
+                <div id="counter-11" class="card-counter">0</div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4" id="card-12">
+            <div class="card">
+              <img src="/kepek/ajandek12.jpg" class="card-img-top" alt="Kép 6">
+              <div class="card-body">
+                <h5 class="card-title">Zsákbamacska</h5>
+                <p class="card-text">Lehet hogy jó lehet hogy nem :p.</p>
+                <button class="btn btn-primary" onclick="szavazas(12)">Szavazás</button>
+                <div id="counter-12" class="card-counter">0</div>
+              </div>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+      
+      
+      <script src="app.js"></script>
+</body>
+</html>

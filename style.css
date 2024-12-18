@@ -7,9 +7,16 @@ h1{
 }
 body{
     background-color: green;
+    color: white;
 }
 .card-counter {
     font-size: 1.2rem;
     font-weight: bold;
     margin-top: 10px;
   }
+
+#tortenet{
+    background-color: red;
+    color: white;
+    border-style: double;
+}

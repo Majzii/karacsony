@@ -20,3 +20,9 @@ body{
     color: white;
     border-style: double;
 }
+#legnépszerűbb-ajándék {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
